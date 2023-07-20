@@ -1,0 +1,5 @@
+silk_touch_permission: "customisablesilktouch.use"
+silk_touch_blocks:
+  - BUDDING_AMETHYST
+  - DIAMOND_ORE
+  - SPAWNER
