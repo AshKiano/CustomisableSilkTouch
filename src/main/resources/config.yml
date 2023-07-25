@@ -1,5 +1,13 @@
+# The permission required for a player to use the customisable silk touch.
+# Default is "customisablesilktouch.use". 
+# Players with this permission will be able to mine the blocks specified in 'silk_touch_blocks' 
+# using a diamond or netherite pickaxe enchanted with Silk Touch.
 silk_touch_permission: "customisablesilktouch.use"
+
+# List of blocks that are affected by the customisable silk touch.
+# Add the desired blocks in ALL_CAPS.
+# The blocks specified here can only be mined with Silk Touch enchantment by the players having 'silk_touch_permission'.
+# Currently, BUDDING_AMETHYST and SPAWNER blocks are affected.
 silk_touch_blocks:
   - BUDDING_AMETHYST
-  - DIAMOND_ORE
   - SPAWNER
