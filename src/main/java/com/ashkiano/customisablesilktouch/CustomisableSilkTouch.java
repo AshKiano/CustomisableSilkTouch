@@ -35,6 +35,8 @@ public class CustomisableSilkTouch extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(this, this);
 
         Metrics metrics = new Metrics(this, 19020);
+
+        System.out.println("Thank you for using the CustomisableSilkTouch plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://paypal.me/josefvyskocil");
     }
 
     private void loadConfig() {
