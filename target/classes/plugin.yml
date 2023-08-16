@@ -1,5 +1,5 @@
 name: CustomisableSilkTouch
-version: '1.3'
+version: '1.5'
 main: com.ashkiano.customisablesilktouch.CustomisableSilkTouch
 api-version: '1.16'
 authors: [AshKiano]
