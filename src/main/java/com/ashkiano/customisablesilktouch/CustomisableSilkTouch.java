@@ -26,6 +26,7 @@ public class CustomisableSilkTouch extends JavaPlugin implements Listener {
 
     private List<String> silkTouchBlocks;
     private String silkTouchPermission;
+    private boolean showDonateMessage;
 
     @Override
     public void onEnable() {
@@ -36,13 +37,16 @@ public class CustomisableSilkTouch extends JavaPlugin implements Listener {
 
         Metrics metrics = new Metrics(this, 19020);
 
-        this.getLogger().info("Thank you for using the CustomisableSilkTouch plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
+        if (showDonateMessage) {
+            this.getLogger().info("Thank you for using the CustomisableSilkTouch plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
+        }
     }
 
     private void loadConfig() {
         FileConfiguration config = getConfig();
         silkTouchBlocks = config.getStringList("silk_touch_blocks");
         silkTouchPermission = config.getString("silk_touch_permission", "customisablesilktouch.use");
+        showDonateMessage = config.getBoolean("ShowDonateMessage", true);
     }
 
     @EventHandler

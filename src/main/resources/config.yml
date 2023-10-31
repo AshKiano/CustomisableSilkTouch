@@ -1,3 +1,8 @@
+# Whether to show the donation request message in the server console on plugin startup.
+# The message encourages server administrators to make a donation to support the development at: https://donate.ashkiano.com
+# Set to true to display the message in the console, set to false to hide it.
+ShowDonateMessage: true
+
 # The permission required for a player to use the customisable silk touch.
 # Default is "customisablesilktouch.use". 
 # Players with this permission will be able to mine the blocks specified in 'silk_touch_blocks' 
