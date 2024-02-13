@@ -21,7 +21,5 @@ s
 C.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml,5\9\5983fc87d25c5a4194b708e12d4f7a5d2fe1c001
 m
 =.idea/libraries/Maven__net_md_5_bungeecord_chat_1_20_R0_1.xml,a\1\a11606e66af05d9dd8a97c143b91676332ce1a27
-I
-CustomisableSilkTouch.iml,1\e\1ebd9e7133ec9cc329dba6fb7c1d3dbe475900f0
 p
 @.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml,7\c\7c5ad8ea3682abc1e44587c8e342f6032c50d9c8
