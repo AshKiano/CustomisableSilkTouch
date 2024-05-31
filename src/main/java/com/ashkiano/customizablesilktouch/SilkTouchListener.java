@@ -47,6 +47,12 @@ public class SilkTouchListener implements Listener {
 
         event.setDropItems(false);
 
+        if (silkTouchData.getBlockedBlocks().containsKey(blockType)) {
+            player.getWorld().dropItemNaturally(event.getBlock().getLocation(),
+                    new ItemStack(silkTouchData.getBlockedBlocks().get(blockType)));
+            return;
+        }
+
         if (blockType == Material.SPAWNER) {
             CreatureSpawner spawnerBlock = (CreatureSpawner) event.getBlock().getState();
 
