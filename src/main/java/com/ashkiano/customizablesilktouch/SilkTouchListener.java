@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BlockStateMeta;
 
@@ -61,6 +62,21 @@ public class SilkTouchListener implements Listener {
         }
 
         player.getWorld().dropItemNaturally(event.getBlock().getLocation(), new ItemStack(blockType));
+    }
+
+    @EventHandler
+    public void onBlockPlace(BlockPlaceEvent event) {
+        if (event.getBlock().getType() != Material.SPAWNER) {
+            return;
+        }
+
+        ItemStack item = event.getItemInHand();
+        BlockStateMeta blockStateMeta = (BlockStateMeta) item.getItemMeta();
+        CreatureSpawner spawnerMeta = (CreatureSpawner) blockStateMeta.getBlockState();
+
+        CreatureSpawner spawnerData = (CreatureSpawner) event.getBlock().getState();
+        spawnerData.setSpawnedType(spawnerMeta.getSpawnedType());
+        spawnerData.update();
     }
 
 }
