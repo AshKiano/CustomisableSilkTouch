@@ -1,5 +1,8 @@
-name: CustomisableSilkTouch
+name: CustomizableSilkTouch
 version: '${project.version}'
-main: com.ashkiano.customisablesilktouch.CustomisableSilkTouch
-api-version: '1.16'
-authors: [AshKiano]
+main: com.ashkiano.customizablesilktouch.CustomizableSilkTouch
+api-version: '1.20'
+authors: [ AshKiano, BitByLogic ]
+commands:
+  customizablesilktouch:
+    aliases: [ "cst" ]

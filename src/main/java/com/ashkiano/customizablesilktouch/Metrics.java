@@ -1,4 +1,4 @@
-package com.ashkiano.customisablesilktouch;
+package com.ashkiano.customizablesilktouch;
 
 /*
  * This Metrics class was auto-generated and can be copied into your project if you are
